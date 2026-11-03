@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My JARVIS</title>
+</head>
+<body>
+  <h1>Hello! I am JARVIS</h1>
+  <p>Your personal AI assistant.</p>
+  <button onclick="speak()">Talk to JARVIS</button>
+
+  <script>
+    function speak() {
+      let msg = new SpeechSynthesisUtterance(
+        "Hello! I am JARVIS. How can I help you?"
+      );
+      msg.lang = "en-IN";
+      speechSynthesis.speak(msg);
+    }
+  </script>
+</body>
+</html>
